@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Blakley Plumbing Inc. · Trusted Fort Wayne Plumbers Since 1958</title>
+<meta name="description" content="Blakley Plumbing Inc. — a family-owned, 5.0-star plumbing company serving Fort Wayne, Indiana since 1958. Honest, transparent pricing for leaks, water heaters, drains, fixtures and old-home plumbing. Call (260) 493-7107." />
+<meta name="theme-color" content="#0d2740" />
+<meta property="og:title" content="Blakley Plumbing Inc. — Trusted Fort Wayne Plumbers Since 1958" />
+<meta property="og:description" content="Family-owned, 5.0★ rated plumbing in Fort Wayne, IN. Honest work, transparent pricing, and a name homeowners have trusted for over 65 years." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --navy:#0d2740;
+    --navy-2:#10314f;
+    --ink:#13283e;
+    --blue:#1f86c4;
+    --blue-deep:#16699e;
+    --blue-soft:#7fc0e8;
+    --copper:#bd7340;
+    --copper-deep:#9c5a2c;
+    --cream:#f6f3ec;
+    --cream-2:#ece4d6;
+    --paper:#fbfaf6;
+    --white:#ffffff;
+    --muted:#5d6b78;
+    --muted-2:#7a8693;
+    --line:rgba(13,39,64,.12);
+    --shadow-sm:0 4px 14px -8px rgba(13,39,64,.30);
+    --shadow:0 24px 50px -24px rgba(13,39,64,.40);
+    --shadow-lg:0 40px 80px -30px rgba(13,39,64,.50);
+    --maxw:1200px;
+    --r:18px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.65;
+    font-size:17px;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;line-height:1.08;font-weight:600;letter-spacing:-.015em;color:var(--navy)}
+  a{color:inherit;text-decoration:none}
+  img,video,svg{display:block;max-width:100%}
+  ::selection{background:var(--blue);color:#fff}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .eyebrow{font-weight:700;text-transform:uppercase;letter-spacing:.2em;font-size:12px;color:var(--copper);display:inline-flex;align-items:center;gap:9px}
+  .eyebrow::before{content:"";width:26px;height:2px;background:var(--copper);border-radius:2px}
+  .eyebrow.light{color:var(--blue-soft)}
+  .eyebrow.light::before{background:var(--blue-soft)}
+  .eyebrow.center{justify-content:center}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:'Inter';font-weight:600;font-size:15.5px;
+    padding:15px 28px;border-radius:999px;cursor:pointer;border:1.6px solid transparent;
+    transition:transform .25s cubic-bezier(.34,1.56,.64,1),background .25s ease,color .25s ease,box-shadow .25s ease;white-space:nowrap}
+  .btn svg{width:18px;height:18px}
+  .btn:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+  .btn-primary{background:var(--blue);color:#fff;box-shadow:0 14px 30px -12px rgba(31,134,196,.65)}
+  .btn-primary:hover{background:var(--blue-deep);transform:translateY(-2px);box-shadow:0 20px 38px -14px rgba(31,134,196,.75)}
+  .btn-copper{background:var(--copper);color:#fff;box-shadow:0 14px 30px -12px rgba(189,115,64,.6)}
+  .btn-copper:hover{background:var(--copper-deep);transform:translateY(-2px)}
+  .btn-ghost{background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.45);backdrop-filter:blur(6px)}
+  .btn-ghost:hover{background:rgba(255,255,255,.18);transform:translateY(-2px)}
+  .btn-outline{background:transparent;color:var(--navy);border-color:var(--line)}
+  .btn-outline:hover{background:var(--navy);color:#fff;border-color:var(--navy);transform:translateY(-2px)}
+
+  .stars{display:inline-flex;gap:2px;color:#f5b942}
+  .stars svg{width:16px;height:16px;fill:currentColor}
+
+  /* ---------- NAV ---------- */
+  header.nav{position:fixed;top:0;left:0;right:0;z-index:60;transition:background .4s ease,box-shadow .4s ease,padding .4s ease}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;max-width:var(--maxw);margin:0 auto;padding:18px 24px;transition:padding .4s ease}
+  .brand{display:flex;align-items:center;gap:13px;min-width:0}
+  .brand .mark{width:50px;height:50px;border-radius:50%;background:#fff;display:grid;place-items:center;flex-shrink:0;
+    box-shadow:0 6px 18px -8px rgba(0,0,0,.45);overflow:hidden;border:1.5px solid rgba(255,255,255,.7)}
+  .brand .mark img{width:80%;height:80%;object-fit:contain}
+  .brand .bn{display:flex;flex-direction:column;line-height:1.05;min-width:0}
+  .brand .bn b{font-family:'Fraunces';font-weight:600;font-size:20px;letter-spacing:-.01em;color:#fff;transition:color .4s ease}
+  .brand .bn span{font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--blue-soft);transition:color .4s ease}
+  .nav-links{display:flex;align-items:center;gap:32px}
+  .nav-links a{font-weight:500;font-size:15px;color:rgba(255,255,255,.9);position:relative;transition:color .2s ease}
+  .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;background:var(--copper);transition:width .28s ease}
+  .nav-links a:hover{color:#fff}
+  .nav-links a:hover::after{width:100%}
+  .nav-cta{display:flex;align-items:center;gap:14px}
+  .nav-phone{display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:15.5px;color:#fff}
+  .nav-phone svg{width:17px;height:17px}
+
+  header.nav.scrolled{background:rgba(251,250,246,.88);backdrop-filter:blur(14px);box-shadow:0 6px 26px -16px rgba(13,39,64,.5);padding:0}
+  header.nav.scrolled .nav-inner{padding:11px 24px}
+  header.nav.scrolled .brand .mark{background:var(--navy);border-color:var(--line)}
+  header.nav.scrolled .brand .bn b{color:var(--navy)}
+  header.nav.scrolled .brand .bn span{color:var(--copper)}
+  header.nav.scrolled .nav-links a{color:var(--ink)}
+  header.nav.scrolled .nav-phone{color:var(--navy)}
+
+  .hamburger{display:none;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);border-radius:11px;cursor:pointer;padding:9px;color:#fff}
+  header.nav.scrolled .hamburger{color:var(--navy);background:rgba(13,39,64,.06);border-color:var(--line)}
+  .hamburger svg{width:22px;height:22px}
+
+  /* mobile drawer */
+  .drawer{position:fixed;inset:0;z-index:70;background:rgba(13,39,64,.55);backdrop-filter:blur(4px);opacity:0;pointer-events:none;transition:opacity .3s ease}
+  .drawer.open{opacity:1;pointer-events:auto}
+  .drawer-panel{position:absolute;top:0;right:0;height:100%;width:min(82vw,340px);background:var(--navy);
+    transform:translateX(100%);transition:transform .38s cubic-bezier(.4,0,.2,1);padding:26px 26px 40px;display:flex;flex-direction:column;gap:8px}
+  .drawer.open .drawer-panel{transform:translateX(0)}
+  .drawer-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+  .drawer-top b{font-family:'Fraunces';color:#fff;font-size:18px}
+  .drawer-close{background:rgba(255,255,255,.1);border:none;color:#fff;border-radius:10px;padding:8px;cursor:pointer}
+  .drawer-close svg{width:20px;height:20px}
+  .drawer a.dl{color:rgba(255,255,255,.92);font-size:18px;font-weight:500;padding:14px 4px;border-bottom:1px solid rgba(255,255,255,.1)}
+  .drawer a.dl:hover{color:var(--blue-soft)}
+  .drawer .btn{margin-top:18px}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden;background:var(--navy)}
+  .hero .bg{position:absolute;inset:0;z-index:0;background-size:cover;background-position:center;transform:scale(1.08);will-change:transform}
+  .hero .scrim{position:absolute;inset:0;z-index:1;background:
+    linear-gradient(110deg,rgba(8,26,44,.93) 0%,rgba(10,32,54,.82) 42%,rgba(10,32,54,.42) 78%,rgba(10,32,54,.25) 100%),
+    linear-gradient(180deg,rgba(8,24,42,.55) 0%,transparent 30%,rgba(8,24,42,.55) 100%)}
+  .hero-content{position:relative;z-index:2;width:100%;max-width:var(--maxw);margin:0 auto;padding:150px 24px 90px}
+  .hero-badge{display:inline-flex;align-items:center;gap:11px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);
+    backdrop-filter:blur(8px);padding:8px 16px 8px 10px;border-radius:999px;color:#fff;font-weight:600;font-size:13.5px;margin-bottom:26px}
+  .hero-badge .pill{background:var(--copper);color:#fff;font-size:11px;font-weight:700;letter-spacing:.04em;padding:4px 10px;border-radius:999px}
+  .hero h1{color:#fff;font-size:clamp(44px,7.4vw,86px);font-weight:600;max-width:15ch;letter-spacing:-.02em}
+  .hero h1 em{font-style:italic;font-weight:500;color:var(--blue-soft)}
+  .hero p.lead{color:rgba(255,255,255,.9);font-size:clamp(17px,2vw,21px);max-width:53ch;margin:26px 0 36px;line-height:1.6}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-trust{display:flex;gap:30px;flex-wrap:wrap;margin-top:46px;padding-top:30px;border-top:1px solid rgba(255,255,255,.16)}
+  .hero-trust .t{display:flex;flex-direction:column;gap:3px}
+  .hero-trust .t b{font-family:'Fraunces';color:#fff;font-size:26px;font-weight:600;line-height:1}
+  .hero-trust .t span{color:rgba(255,255,255,.72);font-size:13px;font-weight:500;letter-spacing:.02em}
+  .scroll-cue{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);z-index:2;color:rgba(255,255,255,.6);animation:bob 2.4s ease-in-out infinite}
+  .scroll-cue svg{width:26px;height:26px}
+  @keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,10px)}}
+
+  /* ---------- MARQUEE ---------- */
+  .strip{background:var(--copper);color:#fff;padding:15px 0;overflow:hidden;white-space:nowrap;position:relative;z-index:3}
+  .strip .track{display:inline-flex;gap:0;animation:scrollx 34s linear infinite}
+  .strip .track span{display:inline-flex;align-items:center;font-weight:600;font-size:14px;letter-spacing:.05em;text-transform:uppercase}
+  .strip .track span i{font-style:normal;padding:0 30px;display:inline-flex;align-items:center;gap:12px}
+  .strip .dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.7);display:inline-block}
+  @keyframes scrollx{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* ---------- SECTIONS ---------- */
+  section{position:relative}
+  .sec{padding:100px 0}
+  .sec-head{max-width:680px;margin-bottom:56px}
+  .sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+  .sec-head h2{font-size:clamp(32px,4.8vw,54px);margin-top:16px}
+  .sec-head p{color:var(--muted);font-size:18.5px;margin-top:18px;line-height:1.6}
+
+  /* SERVICES */
+  .services{background:var(--cream)}
+  .svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .svc-card{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:30px 26px;
+    transition:transform .35s cubic-bezier(.34,1.4,.64,1),box-shadow .35s ease,border-color .35s ease;position:relative;overflow:hidden}
+  .svc-card::after{content:"";position:absolute;left:0;top:0;height:3px;width:0;background:linear-gradient(90deg,var(--blue),var(--blue-soft));transition:width .4s ease}
+  .svc-card:hover{transform:translateY(-7px);box-shadow:var(--shadow);border-color:transparent}
+  .svc-card:hover::after{width:100%}
+  .svc-ic{width:54px;height:54px;border-radius:14px;background:rgba(31,134,196,.1);color:var(--blue-deep);display:grid;place-items:center;margin-bottom:20px;transition:background .35s ease,color .35s ease}
+  .svc-card:hover .svc-ic{background:var(--blue);color:#fff}
+  .svc-ic svg{width:27px;height:27px;stroke-width:2}
+  .svc-card h3{font-size:20px;margin-bottom:9px}
+  .svc-card p{color:var(--muted);font-size:15px;line-height:1.58}
+
+  /* HERITAGE / ABOUT */
+  .heritage{background:var(--paper)}
+  .her-grid{display:grid;grid-template-columns:1fr 1.02fr;gap:64px;align-items:center}
+  .her-media{position:relative}
+  .her-photo{border-radius:24px;overflow:hidden;box-shadow:var(--shadow-lg);aspect-ratio:4/5;background:var(--cream-2)}
+  .her-photo img{width:100%;height:100%;object-fit:cover}
+  .her-est{position:absolute;left:-22px;bottom:-26px;background:var(--navy);color:#fff;border-radius:20px;padding:22px 26px;box-shadow:var(--shadow);text-align:center;border:1px solid rgba(255,255,255,.08)}
+  .her-est b{font-family:'Fraunces';display:block;font-size:42px;line-height:1;color:#fff;font-weight:600}
+  .her-est span{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--blue-soft);font-weight:600}
+  .her-copy p{color:#3f5163;font-size:17.5px;margin-bottom:18px;line-height:1.68}
+  .her-copy p strong{color:var(--navy);font-weight:600}
+  .sig{display:flex;align-items:center;gap:14px;margin-top:26px}
+  .sig .who{font-family:'Fraunces';font-style:italic;font-size:22px;color:var(--copper)}
+  .sig .role{font-size:13.5px;color:var(--muted);font-weight:500}
+
+  /* VALUES */
+  .values{background:var(--navy);color:#fff;overflow:hidden}
+  .values .sec-head h2,.values h2{color:#fff}
+  .values .sec-head p{color:rgba(255,255,255,.72)}
+  .val-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .val-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:30px 26px;transition:background .3s ease,transform .3s ease,border-color .3s ease}
+  .val-card:hover{background:rgba(255,255,255,.08);transform:translateY(-5px);border-color:rgba(127,192,232,.4)}
+  .val-ic{width:50px;height:50px;border-radius:13px;background:rgba(127,192,232,.16);color:var(--blue-soft);display:grid;place-items:center;margin-bottom:18px}
+  .val-ic svg{width:25px;height:25px;stroke-width:2}
+  .val-card h3{color:#fff;font-size:19px;margin-bottom:8px}
+  .val-card p{color:rgba(255,255,255,.7);font-size:14.5px;line-height:1.6}
+
+  /* MONITOR ANIMATION */
+  .monitor{display:flex;flex-direction:column;border-radius:22px;overflow:hidden;box-shadow:var(--shadow-lg);
+    background:linear-gradient(180deg,#eef7fc 0%,#dcecf7 70%,#cfe4f2 100%);border:1px solid rgba(13,39,64,.08);height:100%}
+  .mon-head{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;background:rgba(255,255,255,.55);border-bottom:1px solid rgba(13,39,64,.07)}
+  .mon-head .lbl{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue-deep)}
+  .mon-head .live{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:var(--navy)}
+  .mon-head .live .d{width:8px;height:8px;border-radius:50%;background:#2bbd6e;position:relative}
+  .mon-head .live .d::after{content:"";position:absolute;inset:0;border-radius:50%;background:#2bbd6e;animation:ring 1.8s ease-out infinite}
+  @keyframes ring{0%{transform:scale(1);opacity:.6}100%{transform:scale(2.8);opacity:0}}
+  .mon-stage{position:relative;flex:1;min-height:230px;overflow:hidden}
+  .mon-pipe{position:absolute;top:14px;left:50%;transform:translateX(-50%);z-index:2}
+  .drop{position:absolute;top:34px;width:13px;height:19px;z-index:1;opacity:0}
+  .ripple{position:absolute;bottom:38px;width:14px;height:14px;border:2px solid rgba(31,134,196,.5);border-radius:50%;opacity:0}
+  @keyframes fall{0%{opacity:0;transform:translateY(0) scale(.7)}12%{opacity:1}80%{opacity:1}100%{opacity:0;transform:translateY(150px) scale(1)}}
+  @keyframes rip{0%{opacity:.7;transform:scale(.3)}100%{opacity:0;transform:scale(2.6)}}
+  .mon-surface{position:absolute;left:0;right:0;bottom:0;z-index:0}
+  .mon-foot{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;background:rgba(255,255,255,.6);border-top:1px solid rgba(13,39,64,.07)}
+  .mon-status{font-size:14px;font-weight:600;color:var(--navy);display:inline-flex;align-items:center;gap:9px}
+  .mon-status .sd{width:9px;height:9px;border-radius:50%;background:var(--blue);transition:background .4s ease}
+  .mon-foot .psi{font-size:12px;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums}
+
+  /* REVIEWS */
+  .reviews{background:var(--cream)}
+  .rev-top{display:flex;flex-wrap:wrap;gap:26px;align-items:center;justify-content:space-between;margin-bottom:48px}
+  .rev-score{display:flex;align-items:center;gap:20px}
+  .rev-score .num{font-family:'Fraunces';font-size:62px;font-weight:600;color:var(--navy);line-height:.9}
+  .rev-score .meta b{display:block;font-size:15px;color:var(--navy);font-weight:600;margin-bottom:3px}
+  .rev-score .meta span{font-size:13.5px;color:var(--muted)}
+  .gbadge{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);font-weight:500;margin-top:7px}
+  .gbadge svg{width:18px;height:18px}
+  .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .rev-card{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:28px 26px;display:flex;flex-direction:column;gap:14px;
+    transition:transform .35s ease,box-shadow .35s ease}
+  .rev-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+  .rev-card .quote{color:#374b5d;font-size:15.5px;line-height:1.66;flex:1}
+  .rev-who{display:flex;align-items:center;gap:13px;border-top:1px solid var(--line);padding-top:16px}
+  .rev-av{width:44px;height:44px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:600;font-family:'Fraunces';font-size:18px;flex-shrink:0}
+  .rev-who b{font-size:15px;color:var(--navy);display:block;line-height:1.2}
+  .rev-who span{font-size:12.5px;color:var(--muted-2)}
+  .pullquotes{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:40px}
+  .pullquotes .pq{background:var(--white);border:1px solid var(--line);border-radius:999px;padding:11px 20px;font-size:14px;font-weight:500;color:var(--navy);font-style:italic}
+
+  /* AREA / MAP */
+  .area{background:var(--paper)}
+  .area-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center}
+  .area-copy h2{font-size:clamp(30px,4.4vw,48px)}
+  .area-info{display:flex;flex-direction:column;gap:6px;margin-top:30px}
+  .ai{display:flex;align-items:flex-start;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .ai .aic{width:46px;height:46px;border-radius:12px;background:rgba(189,115,64,.1);color:var(--copper-deep);display:grid;place-items:center;flex-shrink:0}
+  .ai .aic svg{width:22px;height:22px;stroke-width:2}
+  .ai .at b{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted-2);font-weight:600;margin-bottom:2px}
+  .ai .at a,.ai .at span{font-size:17px;color:var(--navy);font-weight:500}
+  .ai .at a:hover{color:var(--blue-deep)}
+  .map-frame{border-radius:24px;overflow:hidden;box-shadow:var(--shadow-lg);border:1px solid var(--line);aspect-ratio:4/3;background:var(--cream-2)}
+  .map-frame iframe{width:100%;height:100%;border:0;display:block;filter:grayscale(.15)}
+
+  /* CTA BAND */
+  .ctaband{position:relative;overflow:hidden;background:var(--navy)}
+  .ctaband .bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.22;z-index:0}
+  .ctaband .ov{position:absolute;inset:0;background:linear-gradient(120deg,rgba(10,30,52,.95),rgba(16,49,79,.82));z-index:1}
+  .ctaband .inner{position:relative;z-index:2;text-align:center;padding:100px 24px;max-width:760px;margin:0 auto}
+  .ctaband h2{color:#fff;font-size:clamp(32px,5vw,56px);margin-bottom:18px}
+  .ctaband h2 em{font-style:italic;color:var(--blue-soft);font-weight:500}
+  .ctaband p{color:rgba(255,255,255,.82);font-size:19px;margin-bottom:34px}
+  .ctaband .hero-cta{justify-content:center}
+
+  /* FOOTER */
+  footer.ft{background:#0a1f33;color:rgba(255,255,255,.7);padding:64px 0 30px}
+  .ft-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:48px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.1)}
+  .ft-brand{display:flex;align-items:center;gap:13px;margin-bottom:18px}
+  .ft-brand .mark{width:52px;height:52px;border-radius:50%;background:#fff;display:grid;place-items:center;overflow:hidden;flex-shrink:0}
+  .ft-brand .mark img{width:80%;height:80%;object-fit:contain}
+  .ft-brand b{font-family:'Fraunces';color:#fff;font-size:21px;line-height:1.1}
+  .ft-brand span{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--blue-soft);font-weight:600}
+  .ft-col p{font-size:15px;line-height:1.7}
+  .ft-col h4{color:#fff;font-family:'Inter';font-size:13px;text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+  .ft-col a{display:block;color:rgba(255,255,255,.7);font-size:15px;padding:6px 0;transition:color .2s ease}
+  .ft-col a:hover{color:var(--blue-soft)}
+  .ft-bottom{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center;padding-top:26px;font-size:13.5px;color:rgba(255,255,255,.5)}
+  .ft-bottom .stars{color:#f5b942}
+
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.6,.2,1),transform .7s cubic-bezier(.2,.6,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media(max-width:1024px){
+    .svc-grid{grid-template-columns:repeat(2,1fr)}
+    .val-grid{grid-template-columns:repeat(2,1fr)}
+    .her-grid{gap:48px}
+  }
+  @media(max-width:860px){
+    .nav-links,.nav-phone{display:none}
+    .hamburger{display:grid;place-items:center}
+    .sec{padding:74px 0}
+    .her-grid,.area-grid,.rev-grid{grid-template-columns:1fr}
+    .her-grid{gap:70px}
+    .her-media{max-width:440px;margin:0 auto}
+    .rev-grid{gap:16px}
+    .area-grid{gap:38px}
+    .hero-content{padding:130px 24px 70px}
+    .hero-trust{gap:24px}
+  }
+  @media(max-width:560px){
+    body{font-size:16px}
+    .svc-grid,.val-grid{grid-template-columns:1fr}
+    .wrap{padding:0 20px}
+    .hero-cta .btn,.ctaband .hero-cta .btn{flex:1}
+    .her-est{left:50%;transform:translateX(-50%);bottom:-24px}
+    .rev-top{flex-direction:column;align-items:flex-start}
+    .pullquotes .pq{font-size:13px}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+    .reveal{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+
+<!-- ========== NAV ========== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand" aria-label="Blakley Plumbing home">
+      <span class="mark"><img src="assets/logo.webp" alt="Blakley Plumbing logo" /></span>
+      <span class="bn"><b>Blakley Plumbing</b><span>Fort Wayne · Est. 1958</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#heritage">Our Story</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service Area</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:+12604937107" class="nav-phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(260) 493-7107</a>
+      <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+      <button class="hamburger" id="openMenu" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile drawer -->
+<div class="drawer" id="drawer">
+  <div class="drawer-panel">
+    <div class="drawer-top">
+      <b>Blakley Plumbing</b>
+      <button class="drawer-close" id="closeMenu" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+    <a href="#services" class="dl">Services</a>
+    <a href="#heritage" class="dl">Our Story</a>
+    <a href="#reviews" class="dl">Reviews</a>
+    <a href="#area" class="dl">Service Area</a>
+    <a href="tel:+12604937107" class="btn btn-primary">Call (260) 493-7107</a>
+    <a href="#contact" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,.4)">Get a Free Quote</a>
+  </div>
+</div>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="top">
+  <div class="bg" id="heroBg" style="background-image:url('https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=1900&q=72&auto=format&fit=crop')"></div>
+  <div class="scrim"></div>
+  <div class="hero-content">
+    <span class="hero-badge"><span class="pill">5.0 ★</span> Rated 5.0 across 30 Google reviews</span>
+    <h1>Honest plumbing Fort Wayne has <em>trusted since 1958.</em></h1>
+    <p class="lead">Three generations of family craftsmanship — fixing leaks, water heaters, drains and old-home plumbing the right way, with upfront pricing and no surprises.</p>
+    <div class="hero-cta">
+      <a href="tel:+12604937107" class="btn btn-primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call (260) 493-7107</a>
+      <a href="#services" class="btn btn-ghost">View Our Services</a>
+    </div>
+    <div class="hero-trust">
+      <div class="t"><b>65+ yrs</b><span>Serving Fort Wayne</span></div>
+      <div class="t"><b>5.0 ★</b><span>30 Google reviews</span></div>
+      <div class="t"><b>Family</b><span>Owned &amp; operated</span></div>
+      <div class="t"><b>Licensed</b><span>&amp; fully insured</span></div>
+    </div>
+  </div>
+  <a href="#services" class="scroll-cue" aria-label="Scroll down"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg></a>
+</section>
+
+<!-- ========== MARQUEE ========== -->
+<div class="strip" aria-hidden="true">
+  <div class="track" id="track">
+    <span><i><span class="dot"></span> Leak Detection &amp; Repair</i><i><span class="dot"></span> Water Heaters</i><i><span class="dot"></span> Drain Cleaning</i><i><span class="dot"></span> Faucets &amp; Fixtures</i><i><span class="dot"></span> Old-Home Plumbing</i><i><span class="dot"></span> Sump Pumps</i><i><span class="dot"></span> Toilets &amp; Sinks</i><i><span class="dot"></span> Real-Estate Repairs</i></span>
+    <span><i><span class="dot"></span> Leak Detection &amp; Repair</i><i><span class="dot"></span> Water Heaters</i><i><span class="dot"></span> Drain Cleaning</i><i><span class="dot"></span> Faucets &amp; Fixtures</i><i><span class="dot"></span> Old-Home Plumbing</i><i><span class="dot"></span> Sump Pumps</i><i><span class="dot"></span> Toilets &amp; Sinks</i><i><span class="dot"></span> Real-Estate Repairs</i></span>
+  </div>
+</div>
+
+<!-- ========== SERVICES ========== -->
+<section class="sec services" id="services">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow center">What We Do</span>
+      <h2>Full-service plumbing, done right the first time</h2>
+      <p>From a dripping faucet to a full repipe, we handle residential and light-commercial plumbing across Fort Wayne — always with clear pricing before we start.</p>
+    </div>
+    <div class="svc-grid" id="svcGrid"></div>
+  </div>
+</section>
+
+<!-- ========== HERITAGE ========== -->
+<section class="sec heritage" id="heritage">
+  <div class="wrap">
+    <div class="her-grid">
+      <div class="her-media reveal">
+        <div class="her-photo"><img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1100&q=72&auto=format&fit=crop" alt="Polished vintage chrome bathtub faucet and fixtures" loading="lazy" /></div>
+        <div class="her-est"><b>1958</b><span>Established</span></div>
+      </div>
+      <div class="her-copy reveal">
+        <span class="eyebrow">Our Story</span>
+        <h2 style="font-size:clamp(30px,4.4vw,50px);margin:16px 0 22px">A family name on every job — for over 65 years.</h2>
+        <p>Since <strong>1958</strong>, the Blakley family has kept Fort Wayne's water running clean and its homes dry. What started as one trusted plumber has grown into a small, dedicated team that still answers the phone, shows up on time, and treats your home like their own.</p>
+        <p>We're known for <strong>understanding old homes</strong> — the quirks, the original fittings, the surprises behind the wall — and for explaining exactly what's going on before any work begins. No upselling. No mess left behind. Just honest, skilled work and pricing you can trust.</p>
+        <div class="sig">
+          <span class="who">Roger &amp; Martin</span>
+          <span class="role">— Your Blakley plumbers</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== VALUES + MONITOR ========== -->
+<section class="sec values">
+  <div class="wrap">
+    <div class="her-grid" style="grid-template-columns:1.15fr .85fr;gap:56px">
+      <div class="reveal">
+        <span class="eyebrow light">Why Homeowners Choose Us</span>
+        <h2 style="font-size:clamp(30px,4.4vw,50px);margin:16px 0 18px">Built on trust, not tickets.</h2>
+        <p style="color:rgba(255,255,255,.74);font-size:18px;margin-bottom:36px;max-width:46ch">The reasons our neighbors keep calling Blakley — and recommend us to their family.</p>
+        <div class="val-grid" style="grid-template-columns:repeat(2,1fr)">
+          <div class="val-card">
+            <div class="val-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/></svg></div>
+            <h3>Honest &amp; Transparent</h3>
+            <p>Upfront, fair pricing explained before we start. You'll never be surprised by the bill.</p>
+          </div>
+          <div class="val-card">
+            <div class="val-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <h3>Family Owned</h3>
+            <p>A local, multi-generation team you'll actually recognize — not a faceless chain.</p>
+          </div>
+          <div class="val-card">
+            <div class="val-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></div>
+            <h3>Old-Home Experts</h3>
+            <p>Decades of experience with Fort Wayne's older houses and original plumbing.</p>
+          </div>
+          <div class="val-card">
+            <div class="val-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+            <h3>Clear Communication</h3>
+            <p>Responsive, respectful, and tidy — we keep you informed from first call to final flush.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- signature water monitor -->
+      <div class="reveal" style="display:flex">
+        <div class="monitor" aria-hidden="true">
+          <div class="mon-head">
+            <span class="lbl">Line Monitor</span>
+            <span class="live"><span class="d"></span> Live</span>
+          </div>
+          <div class="mon-stage" id="stage">
+            <svg class="mon-pipe" width="120" height="34" viewBox="0 0 120 34" fill="none">
+              <rect x="2" y="9" width="116" height="16" rx="4" fill="#5d6b78"/>
+              <rect x="2" y="9" width="116" height="6" rx="3" fill="#7a8693"/>
+              <rect x="0" y="5" width="16" height="24" rx="3" fill="#3f5163"/>
+              <rect x="104" y="5" width="16" height="24" rx="3" fill="#3f5163"/>
+              <rect x="52" y="23" width="16" height="9" rx="2" fill="#3f5163"/>
+            </svg>
+            <svg class="mon-surface" width="100%" height="70" viewBox="0 0 400 70" preserveAspectRatio="none">
+              <path d="M0 40 Q 50 26 100 40 T 200 40 T 300 40 T 400 40 V70 H0 Z" fill="rgba(31,134,196,.18)"/>
+              <path d="M0 50 Q 50 38 100 50 T 200 50 T 300 50 T 400 50 V70 H0 Z" fill="rgba(31,134,196,.30)"/>
+            </svg>
+          </div>
+          <div class="mon-foot">
+            <span class="mon-status"><span class="sd" id="sd"></span><span id="statusTxt">System stable</span></span>
+            <span class="psi" id="psi">62 PSI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== REVIEWS ========== -->
+<section class="sec reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head center reveal" style="margin-bottom:36px">
+      <span class="eyebrow center">Reviews</span>
+      <h2>Loved by Fort Wayne homeowners</h2>
+    </div>
+    <div class="rev-top reveal">
+      <div class="rev-score">
+        <div class="num">5.0</div>
+        <div class="meta">
+          <span class="stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span>
+          <b>Perfect 5.0 rating</b>
+          <span>Based on 30 verified Google reviews</span>
+        </div>
+      </div>
+      <a href="https://www.google.com/maps/place/Blakley+Plumbing+Inc./@41.0854807,-85.1151833,19z/data=!4m10!1m2!2m1!1splumbing!3m6!1s0x8815fbf143eb4b4d:0x7a6a242492f8df0d!8m2!3d41.0854807!4d-85.1139924" target="_blank" rel="noopener" class="btn btn-outline">Read all 30 reviews</a>
+    </div>
+    <div class="rev-grid" id="revGrid"></div>
+    <div class="pullquotes reveal">
+      <span class="pq">"Top notch service, communication, and pricing!"</span>
+      <span class="pq">"Excellent staff — highly recommend!"</span>
+      <span class="pq">"Reasonable rates, understands old homes."</span>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SERVICE AREA + MAP ========== -->
+<section class="sec area" id="area">
+  <div class="wrap">
+    <div class="area-grid">
+      <div class="area-copy reveal" id="contact">
+        <span class="eyebrow">Get In Touch</span>
+        <h2 style="margin:16px 0 12px">Proudly serving Fort Wayne &amp; the surrounding area.</h2>
+        <p style="color:var(--muted);font-size:18px">Based on Kensington Blvd and covering homes throughout Greater Fort Wayne. Call us — we'll talk through the problem and give you straight answers.</p>
+        <div class="area-info">
+          <div class="ai">
+            <div class="aic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div class="at"><b>Call Us</b><a href="tel:+12604937107">(260) 493-7107</a></div>
+          </div>
+          <div class="ai">
+            <div class="aic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div class="at"><b>Visit / Mail</b><span>1031 Kensington Blvd, Fort Wayne, IN 46805</span></div>
+          </div>
+          <div class="ai">
+            <div class="aic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+            <div class="at"><b>Hours</b><span>Mon – Fri · Open until 5:00 PM &nbsp;·&nbsp; Call ahead to schedule</span></div>
+          </div>
+        </div>
+        <a href="tel:+12604937107" class="btn btn-copper" style="margin-top:28px">Call for a Free Quote</a>
+      </div>
+      <div class="map-frame reveal">
+        <iframe title="Blakley Plumbing location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=1031+Kensington+Blvd,+Fort+Wayne,+IN+46805&z=15&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA BAND ========== -->
+<section class="ctaband">
+  <div class="bg" style="background-image:url('https://images.unsplash.com/photo-1542013936693-884638332954?w=1700&q=72&auto=format&fit=crop')"></div>
+  <div class="ov"></div>
+  <div class="inner">
+    <span class="eyebrow light center" style="margin-bottom:14px">Need a Plumber Today?</span>
+    <h2>Let's get your water <em>flowing right.</em></h2>
+    <p>One call to the family Fort Wayne has trusted since 1958. Honest answers, fair pricing, work done well.</p>
+    <div class="hero-cta">
+      <a href="tel:+12604937107" class="btn btn-primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(260) 493-7107</a>
+      <a href="https://www.google.com/maps/place/Blakley+Plumbing+Inc./@41.0854807,-85.1151833,19z/data=!4m10!1m2!2m1!1splumbing!3m6!1s0x8815fbf143eb4b4d:0x7a6a242492f8df0d!8m2!3d41.0854807!4d-85.1139924" target="_blank" rel="noopener" class="btn btn-ghost">Get Directions</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="ft" id="footer">
+  <div class="wrap">
+    <div class="ft-grid">
+      <div class="ft-col">
+        <div class="ft-brand">
+          <span class="mark"><img src="assets/logo.webp" alt="Blakley Plumbing logo" /></span>
+          <span><b>Blakley Plumbing</b><br><span>Fort Wayne · Est. 1958</span></span>
+        </div>
+        <p>A family-owned plumbing company serving Fort Wayne, Indiana with honest, skilled work for more than 65 years. Licensed &amp; insured.</p>
+      </div>
+      <div class="ft-col">
+        <h4>Company</h4>
+        <a href="#services">Services</a>
+        <a href="#heritage">Our Story</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#area">Service Area</a>
+      </div>
+      <div class="ft-col">
+        <h4>Contact</h4>
+        <a href="tel:+12604937107">(260) 493-7107</a>
+        <a href="https://www.google.com/maps/place/Blakley+Plumbing+Inc./@41.0854807,-85.1151833,19z/data=!4m10!1m2!2m1!1splumbing!3m6!1s0x8815fbf143eb4b4d:0x7a6a242492f8df0d!8m2!3d41.0854807!4d-85.1139924" target="_blank" rel="noopener">1031 Kensington Blvd<br>Fort Wayne, IN 46805</a>
+        <a href="#area">Mon – Fri · Closes 5 PM</a>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <span>© <span id="yr"></span> Blakley Plumbing Inc. All rights reserved.</span>
+      <span class="stars" style="display:inline-flex;align-items:center;gap:8px;color:var(--blue-soft);font-weight:500"><span class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span> 5.0 rating · 30 Google reviews</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ---------- DATA ---------- */
+const services=[
+  {t:'Leak Detection & Repair',d:'Hidden leaks found fast and fixed for good — from drips to slab and supply-line leaks.',
+   ic:'<path d="M12 2.5C8 7 5.5 10.5 5.5 14a6.5 6.5 0 0 0 13 0C18.5 10.5 16 7 12 2.5z"/>'},
+  {t:'Water Heaters',d:'Repair, replacement and installation of tank & tankless water heaters.',
+   ic:'<rect x="6" y="3" width="12" height="18" rx="3"/><path d="M9 7h6M12 11v6"/>'},
+  {t:'Drain Cleaning',d:'Clogged sinks, tubs and main lines cleared — no mess, no guesswork.',
+   ic:'<path d="M3 6h18M8 6v10a4 4 0 0 0 8 0"/><path d="M12 20v1"/>'},
+  {t:'Faucets & Fixtures',d:'New faucets, valves and fixtures installed or rebuilt — including older fittings.',
+   ic:'<path d="M5 12h6V8a3 3 0 0 1 3-3h5"/><path d="M5 12v3a3 3 0 0 0 3 3h0"/><path d="M3 12h4"/>'},
+  {t:'Old-Home Plumbing',d:'Repipes and updates for Fort Wayne’s historic homes, done with care.',
+   ic:'<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/>'},
+  {t:'Toilets & Sinks',d:'Running toilets, leaky seals, slow sinks — repaired or fully replaced.',
+   ic:'<path d="M6 4h8v6a4 4 0 0 1-4 4 4 4 0 0 1-4-4z"/><path d="M10 14v4M7 21h6"/>'},
+  {t:'Sump Pumps',d:'Keep your basement dry with reliable sump pump installs and service.',
+   ic:'<path d="M12 2v8"/><path d="M8 6l4-4 4 4"/><path d="M4 14a8 8 0 0 0 16 0"/><path d="M4 19a8 8 0 0 0 16 0"/>'},
+  {t:'Real-Estate Repairs',d:'Pre-sale fixes and inspection punch-lists handled quickly and correctly.',
+   ic:'<path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>'},
+];
+
+const reviews=[
+  {n:'Jackie',m:'A month ago',q:'Outstanding service from start to finish. Martin found and fixed a leak quickly, rebuilt our garden water faucet, and the workmanship was excellent. Communication throughout the entire process was clear and responsive. Highly recommend!'},
+  {n:'Anthony Piekarski',m:'A month ago',q:'Was recommended by my mother-in-law and grandpa to Blakley Plumbing — they were fantastic. Helped me fix a few things to sell my house and they’ll be our go-to company moving forward in our new home. Thank you!'},
+  {n:'Jeff Haines',m:'A year ago',q:'Blakley Plumbing has been a trusted choice for me and my extended family for a long time! Having dependable, honest service providers like Roger and Martin is invaluable — especially for something as essential as plumbing. Highly recommend.'},
+];
+
+/* ---------- RENDER SERVICES ---------- */
+const svcGrid=document.getElementById('svcGrid');
+services.forEach(s=>{
+  const el=document.createElement('div');
+  el.className='svc-card reveal';
+  el.innerHTML=`<div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">${s.ic}</svg></div>
+    <h3>${s.t}</h3><p>${s.d}</p>`;
+  svcGrid.appendChild(el);
+});
+
+/* ---------- RENDER REVIEWS ---------- */
+const revGrid=document.getElementById('revGrid');
+const starRow='<span class="stars" aria-label="5 stars">'+Array(5).fill('<svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>').join('')+'</span>';
+reviews.forEach(r=>{
+  const el=document.createElement('div');
+  el.className='rev-card reveal';
+  el.innerHTML=`${starRow}<p class="quote">“${r.q}”</p>
+    <div class="rev-who"><div class="rev-av">${r.n[0]}</div><div><b>${r.n}</b><span>${r.m} · Google</span></div></div>`;
+  revGrid.appendChild(el);
+});
+
+/* ---------- NAV SCROLL STATE ---------- */
+const nav=document.getElementById('nav');
+const onScroll=()=>nav.classList.toggle('scrolled',window.scrollY>40);
+onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+
+/* ---------- HERO PARALLAX ---------- */
+const heroBg=document.getElementById('heroBg');
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches){
+  window.addEventListener('scroll',()=>{
+    const y=window.scrollY;
+    if(y<900) heroBg.style.transform=`scale(1.08) translateY(${y*0.18}px)`;
+  },{passive:true});
+}
+
+/* ---------- MOBILE DRAWER ---------- */
+const drawer=document.getElementById('drawer');
+document.getElementById('openMenu').onclick=()=>drawer.classList.add('open');
+document.getElementById('closeMenu').onclick=()=>drawer.classList.remove('open');
+drawer.addEventListener('click',e=>{if(e.target===drawer||e.target.classList.contains('dl'))drawer.classList.remove('open');});
+
+/* ---------- REVEAL ON SCROLL ---------- */
+const io=new IntersectionObserver((es)=>{
+  es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+},{threshold:.14,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach((el,i)=>{
+  el.style.transitionDelay=(i%4*0.07)+'s';
+  io.observe(el);
+});
+
+/* ---------- WATER MONITOR ANIMATION ---------- */
+(function(){
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  const stage=document.getElementById('stage');
+  if(!stage)return;
+  const dropSVG='<svg width="13" height="19" viewBox="0 0 13 19"><defs><linearGradient id="dg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9fd2ef"/><stop offset="0.5" stop-color="#1f86c4"/><stop offset="1" stop-color="#16699e"/></linearGradient></defs><path d="M6.5 0C4.6 4 1.5 8 1.5 12a5 5 0 0 0 10 0C11.5 8 8.4 4 6.5 0Z" fill="url(#dg)"/><ellipse cx="4.6" cy="9.5" rx="1.2" ry="2.1" fill="rgba(255,255,255,.65)"/></svg>';
+  function spawn(){
+    const w=stage.clientWidth;
+    const x=w/2 + (Math.random()*70-35);
+    const d=document.createElement('div');
+    d.className='drop';d.style.left=x+'px';d.innerHTML=dropSVG;
+    const dur=1.5+Math.random()*0.8;
+    d.style.animation=`fall ${dur}s cubic-bezier(.5,0,.85,.55) forwards`;
+    stage.appendChild(d);
+    setTimeout(()=>{
+      const r=document.createElement('div');
+      r.className='ripple';r.style.left=(x-4)+'px';
+      r.style.animation='rip .9s ease-out forwards';
+      stage.appendChild(r);
+      setTimeout(()=>r.remove(),900);
+    },dur*1000*0.82);
+    setTimeout(()=>d.remove(),dur*1000+100);
+  }
+  setInterval(spawn,620);spawn();
+
+  /* cycling status */
+  const states=[
+    {t:'System stable',c:'#2bbd6e',psi:'62 PSI'},
+    {t:'Leak detected',c:'#e0a33a',psi:'41 PSI'},
+    {t:'Blakley on the way',c:'#1f86c4',psi:'48 PSI'},
+    {t:'Fixed & tested',c:'#2bbd6e',psi:'64 PSI'},
+  ];
+  let i=0;
+  const sd=document.getElementById('sd'),txt=document.getElementById('statusTxt'),psi=document.getElementById('psi');
+  setInterval(()=>{
+    i=(i+1)%states.length;
+    sd.style.background=states[i].c;txt.textContent=states[i].t;psi.textContent=states[i].psi;
+  },2600);
+})();
+
+/* ---------- YEAR ---------- */
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
